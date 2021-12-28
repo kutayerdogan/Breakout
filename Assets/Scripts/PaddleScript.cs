@@ -47,16 +47,12 @@ public class PaddleScript : MonoBehaviour
             Vector2 scale_original = transform.localScale;
             transform.localScale = new Vector2(1.5f, 0.4f);
             Destroy(collision.gameObject);
-            //StartCoroutine(WaitingToNormal());
-            //transform.localScale = scale_original;
         }
         if (collision.CompareTag("doublePaddle"))
         {
             Vector2 scale_original = transform.localScale;
             transform.localScale = new Vector2(6f, 0.4f);
             Destroy(collision.gameObject);
-            //StartCoroutine(WaitingToNormal());
-            //transform.localScale = scale_original;
         }
         audio.Play();
 
